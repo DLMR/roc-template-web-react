@@ -8,6 +8,6 @@
     "roc"
   ],
   "dependencies": {
-      "roc": "*"
+      "roc": "vgno/roc-config#feature/added-post-install"
   }
 }
