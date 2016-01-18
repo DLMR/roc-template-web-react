@@ -18,5 +18,5 @@ module.exports = {
     prompt: prompt,
     completionMessage: `Start in development mode by running ${chalk.bold('roc dev')}. It will open your ` +
     `default browser when ready. You can change this by setting ${chalk.underline('dev.open')} to ` +
-    `${chalk.underline('false')} in ${chalk.underline('roc.config.js')}.`;
+    `${chalk.underline('false')} in ${chalk.underline('roc.config.js')}.`
 }
