@@ -1,4 +1,5 @@
-const defaultPrompt = require('roc').prompt;
+const chalk = require('chalk');
+const defaultPrompt = require('roc').defaultPrompt;
 
 const prompt =
     defaultPrompt.concat([{
@@ -8,11 +9,14 @@ const prompt =
         default: 3000
     }, {
         type: 'input',
-        name: 'rocAppName',
+        name: 'rocTitleName',
         message: 'What do you what to use for <title>?',
         default: 'My Roc Application'
     }]);
 
 module.exports = {
-    prompt: prompt
+    prompt: prompt,
+    completionMessage: `Start in development mode by running ${chalk.bold('roc dev')}. It will open your ` +
+    `default browser when ready. You can change this by setting ${chalk.underline('dev.open')} to ` +
+    `${chalk.underline('false')} in ${chalk.underline('roc.config.js')}.`;
 }
